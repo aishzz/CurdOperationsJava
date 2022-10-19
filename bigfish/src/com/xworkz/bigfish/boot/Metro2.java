@@ -47,7 +47,7 @@ public class Metro2 {
 			System.out.println("Country : " + this.country);
 			System.out.println("Country Code :" + this.countryCode);
 
-			System.out.println(System.lineSeparator() + "====Routes====");
+			Sintln(System.lineSeparator() + "====Routes====");ystem.out.pr
 			for (int i = 0; i < routes.length; i++) {
 				String string = routes[i];
 				System.out.println(string);
