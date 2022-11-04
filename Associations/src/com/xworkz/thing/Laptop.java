@@ -55,7 +55,6 @@ public String getcolor() {
 	 this.color=color;
 	 
  }
-	
  
  public String getlaptopcompany() {
 	 return this.laptocompany;
@@ -64,17 +63,11 @@ public String getcolor() {
  void setlaptopcompany(String laptopcompany) {
 	 this.laptocompany=laptopcompany;
 	 
-	 
  }
  
  public long getip() {
 	 return this.ip;
  }
- 
- 
- 
- 
- 
  
  
  

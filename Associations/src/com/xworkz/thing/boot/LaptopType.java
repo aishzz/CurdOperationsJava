@@ -19,11 +19,5 @@ public void funyLaptop(Laptop laptop) {
 	laptop.setname("lenevo123");
 	System.out.println(laptop.getname());
 
-	
-
-
-
-
-
 }
 }

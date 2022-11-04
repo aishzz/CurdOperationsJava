@@ -1,10 +1,15 @@
 package com.xworkz.thing.boot;
 
-public class LaptopRunner {
+import com.xworkz.thing.Laptop;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public class LaptopRunner
+   {
+	public static void main(String[] args)
+	{
+  LaptopType type =new LaptopType();
+  Laptop laptop =new Laptop();
+  System.out.println(laptop.getcolor());
+  
 	}
 
 }
