@@ -22,7 +22,7 @@ void setBrand(String brand) {
 	this.brand=brand;
 
 
-	System.out.println(laptop.getname());
+	System.out.println(Laptop.getname());
 	laptop.setname("mp");
 	System.out.println(laptop.getname());
 	
