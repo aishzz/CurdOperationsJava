@@ -4,12 +4,12 @@ public class Hospital {
 	
 		private String name;
 		private String type;
-		private double charges;
+		private double price;
 		private int totalStaffs;
 		private char hospitalCode;
 		private String mdName;
-		private String location;
-		private long totalRevenue;
+		private String area;
+		private long totalIncome;
 		private boolean good;
 		private int totalBranches;
 
@@ -17,26 +17,26 @@ public class Hospital {
 			System.out.println("default constructor of the currency");
 		}
 
-		public Hospital(String name, String type, double charges, int totalStaffs, char hospitalCode, String mdName,
-				String location, long totalRevenue, boolean good, int totalBranches) {
+		public Hospital(String name, String type, double price, int totalStaffs, char hospitalCode, String mdName,
+				String area, long totalIncome, boolean good, int totalBranches) {
 			super();
 			this.name = name;
 			this.type = type;
-			this.charges = charges;
+			this.price = price;
 			this.totalStaffs = totalStaffs;
 			this.hospitalCode = hospitalCode;
 			this.mdName = mdName;
-			this.location = location;
-			this.totalRevenue = totalRevenue;
+			this.area = area;
+			this.totalIncome = totalIncome;
 			this.good = good;
 			this.totalBranches = totalBranches;
 		}
 
 		@Override
 		public String toString() {
-			return "Hospital [name=" + name + ", type=" + type + ", charges=" + charges + ", totalStaffs=" + totalStaffs
-					+ ", hospitalCode=" + hospitalCode + ", mdName=" + mdName + ", location=" + location + ", totalRevenue="
-					+ totalRevenue + ", good=" + good + ", totalBranches=" + totalBranches + "]";
+			return "Hospital [name=" + name + ", type=" + type + ", price=" + price + ", totalStaffs=" + totalStaffs
+					+ ", hospitalCode=" + hospitalCode + ", mdName=" + mdName + ", area=" + area + ", totalIncome="
+					+ totalIncome + ", good=" + good + ", totalBranches=" + totalBranches + "]";
 		}
 
 		@Override
@@ -44,7 +44,7 @@ public class Hospital {
 			if (obj instanceof Hospital) { 
 				System.out.println("obj is the instance of Hospital");
 				Hospital hospital3 = (Hospital) obj; 
-				if (this.name.equals(hospital3.name) && this.location.equals(hospital3.location)
+				if (this.name.equals(hospital3.name) && this.area.equals(hospital3.area)
 						&& this.mdName.equals(hospital3.mdName) && this.type.equals(hospital3.type)) {
 					System.out.println("location ,md name,type and name  are same");
 					return true;
@@ -76,11 +76,11 @@ public class Hospital {
 		}
 
 		public double getCharges() {
-			return charges;
+			return price;
 		}
 
 		public void setCharges(double charges) {
-			this.charges = charges;
+			this.price = charges;
 		}
 
 		public int getTotalStaffs() {
@@ -107,20 +107,20 @@ public class Hospital {
 			this.mdName = mdName;
 		}
 
-		public String getLocation() {
-			return location;
+		public String getArea() {
+			return area;
 		}
 
 		public void setLocation(String location) {
-			this.location = location;
+			this.area = location;
 		}
 
 		public long getTotalRevenue() {
-			return totalRevenue;
+			return totalIncome;
 		}
 
 		public void setTotalRevenue(long totalRevenue) {
-			this.totalRevenue = totalRevenue;
+			this.totalIncome = totalRevenue;
 		}
 
 		public boolean isGood() {

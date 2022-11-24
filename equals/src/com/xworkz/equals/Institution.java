@@ -9,7 +9,7 @@ public class Institution {
 		private char Code;
 		private String principalName;
 		private String location;
-		private long totalRevenue;
+		private long totalIncome;
 		private boolean good;
 		private int totalBranches;
 
@@ -18,7 +18,7 @@ public class Institution {
 		}
 
 		public Institution(String name, String owner, long fees, int totalStudents, char code, String principalName,
-				String location, long totalRevenue, boolean good, int totalBranches) {
+				String location, long totalIncome, boolean good, int totalBranches) {
 			super();
 			this.name = name;
 			this.owner = owner;
@@ -27,7 +27,7 @@ public class Institution {
 			Code = code;
 			this.principalName = principalName;
 			this.location = location;
-			this.totalRevenue = totalRevenue;
+			this.totalIncome = totalIncome;
 			this.good = good;
 			this.totalBranches = totalBranches;
 		}
@@ -35,8 +35,8 @@ public class Institution {
 		@Override
 		public String toString() {
 			return "Institution [name=" + name + ", owner=" + owner + ", fees=" + fees + ", totalStudents=" + totalStudents
-					+ ", Code=" + Code + ", principalName=" + principalName + ", location=" + location + ", totalRevenue="
-					+ totalRevenue + ", good=" + good + ", totalBranches=" + totalBranches + "]";
+					+ ", Code=" + Code + ", principalName=" + principalName + ", location=" + location + ", totalIncome="
+					+ totalIncome + ", good=" + good + ", totalBranches=" + totalBranches + "]";
 		}
 
 		@Override
@@ -117,11 +117,11 @@ public class Institution {
 		}
 
 		public long getTotalRevenue() {
-			return totalRevenue;
+			return totalIncome;
 		}
 
-		public void setTotalRevenue(long totalRevenue) {
-			this.totalRevenue = totalRevenue;
+		public void settotalIncome(long totalRevenue) {
+			this.totalIncome = totalIncome;
 		}
 
 		public boolean isGood() {

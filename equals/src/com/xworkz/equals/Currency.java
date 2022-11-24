@@ -3,7 +3,7 @@ package com.xworkz.equals;
 public class Currency {
 
 		private String type;
-		private double makingCost;
+		private double Cost;
 		private char code;
 		private int totalCurrancy;
 		private boolean strong;
@@ -17,11 +17,11 @@ public class Currency {
 			System.out.println("default constructor of the currency");
 		}
 
-		public  Currency(String type, double makingCost, char code, int totalCurrancy, boolean strong, String countryName,
+		public  Currency(String type, double Cost, char code, int totalCurrancy, boolean strong, String countryName,
 				double convertingPrice, String material, int validity, String acceptableCountries) {
 			super();
 			this.type = type;
-			this.makingCost = makingCost;
+			this.Cost = Cost;
 			this.code = code;
 			this.totalCurrancy = totalCurrancy;
 			this.strong = strong;
@@ -36,8 +36,8 @@ public class Currency {
 		public boolean equals(Object obj) {
 			 if(obj instanceof  Currency) { //checking about instance of
 		    	 System.out.println("obj is the instance of currancy ");
-		    	 Currency currancy3=( Currency)obj; //casting 
-		    	 if(this.material.equals(currancy3.material) && this.type.equals(currancy3.type)) {
+		    	 Currency currancy2=( Currency)obj; //casting 
+		    	 if(this.material.equals(currancy2.material) && this.type.equals(currancy2.type)) {
 		    		 System.out.println("material and type are same");
 		    		 return true;
 		    	 }else {
@@ -53,7 +53,7 @@ public class Currency {
 
 		@Override
 		public String toString() {
-			return " Currency [type=" + type + ", makingCost=" + makingCost + ", code=" + code + ", totalCurrancy="
+			return " Currency [type=" + type + ", Cost=" + Cost + ", code=" + code + ", totalCurrancy="
 					+ totalCurrancy + ", strong=" + strong + ", countryName=" + countryName + ", convertingPrice="
 					+ convertingPrice + ", material=" + material + ", validity=" + validity + ", acceptableCountries="
 					+ acceptableCountries + "]";
@@ -68,11 +68,11 @@ public class Currency {
 		}
 
 		public double getMakingCost() {
-			return makingCost;
+			return Cost;
 		}
 
 		public void setMakingCost(double makingCost) {
-			this.makingCost = makingCost;
+			this.Cost = makingCost;
 		}
 
 		public char getCode() {

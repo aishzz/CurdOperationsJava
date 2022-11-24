@@ -11,7 +11,7 @@ public class PaintRunner {
 		paint.setColour(null);
 		paint.setLifeTime(10);
 		paint.setManufacture("kshna");
-		paint.setName();
+		paint.setName("fh");
 		paint.setPrice(1000);
 		paint.setQuantity(0);
 		paint.setValidity(0);

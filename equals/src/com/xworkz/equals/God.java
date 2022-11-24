@@ -4,47 +4,48 @@ public class God {
 	
 		private String name;
 		private String originalName;
-		private int totalDieties;
+		private int totalChildren;
 		private char godFav;
 		private String location;
-		private int totalTemples;
-		private String priestName;
+		private int totalArea;
+		private String poojari;
 		private double entryFees;
 		private boolean powerFull;
-		private String godPoojaName;
+		private String poojariWife;
 
 		public God() {
-			System.out.println("default constructor of the God");
+			System.out.println("default  God");
 		}
 
-		public God(String name, String originalName, int totalDieties, char godFav, String location, int totalTemples,
-				String priestName, double entryFees, boolean powerFull, String godPoojaName) {
+		public God(String name, String originalName, int totalChildren, char godFav, String location, int totalArea,
+				String poojari, double entryFees, boolean powerFull, String poojariWife) {
 			super();
 			this.name = name;
 			this.originalName = originalName;
-			this.totalDieties = totalDieties;
+			this.totalChildren = totalChildren;
 			this.godFav = godFav;
 			this.location = location;
-			this.totalTemples = totalTemples;
-			this.priestName = priestName;
+			this.totalArea = totalArea;
+			this.poojari = poojari;
 			this.entryFees = entryFees;
 			this.powerFull = powerFull;
-			this.godPoojaName = godPoojaName;
+			this.poojariWife = poojariWife;
 		}
 
 		@Override
 		public String toString() {
-			return "God [name=" + name + ", originalName=" + originalName + ", totalDieties=" + totalDieties + ", godFav="
-					+ godFav + ", location=" + location + ", totalTemples=" + totalTemples + ", priestName=" + priestName
-					+ ", entryFees=" + entryFees + ", powerFull=" + powerFull + ", godPoojaName=" + godPoojaName + "]";
+			return "God [name=" + name + ", originalName=" + originalName + ", totalChildren=" + totalChildren + ", godFav="
+					+ godFav + ", location=" + location + ", totalTemples=" + totalArea + ", poojari=" + poojari
+					+ ", entryFees=" + entryFees + ", powerFull=" + powerFull + ", poojariWife=" + poojariWife + "]";
 		}
 
 		@Override
 		public boolean equals(Object obj) {
 			if(obj instanceof God) { //checking about instance of
 		    	 System.out.println("obj is the instance of currancy ");
-		    	 God god3=(God)obj; //casting 
-		    	 if(this.location.equals(god3.location) && this.name.equals(god3.name) &&this.originalName.equals(god3.originalName)) {
+		    	 God god3=(God)obj; 
+		    	 if(this.location.equals(god3.location) && this.name.equals(god3.name) &&this.originalName.equals(god3.originalName))
+		    	 {
 		    		 System.out.println("location ,original and name  are same");
 		    		 return true;
 		    	 }else {
@@ -75,11 +76,11 @@ public class God {
 		}
 
 		public int getTotalDieties() {
-			return totalDieties;
+			return totalChildren;
 		}
 
 		public void setTotalDieties(int totalDieties) {
-			this.totalDieties = totalDieties;
+			this.totalChildren = totalDieties;
 		}
 
 		public char getGodFav() {
@@ -99,19 +100,19 @@ public class God {
 		}
 
 		public int getTotalTemples() {
-			return totalTemples;
+			return totalArea;
 		}
 
 		public void setTotalTemples(int totalTemples) {
-			this.totalTemples = totalTemples;
+			this.totalArea = totalTemples;
 		}
 
-		public String getPriestName() {
-			return priestName;
+		public String getpoojari() {
+			return poojari;
 		}
 
-		public void setPriestName(String priestName) {
-			this.priestName = priestName;
+		public void setPriestName(String poojari) {
+			this.poojari = poojari;
 		}
 
 		public double getEntryFees() {
@@ -131,11 +132,11 @@ public class God {
 		}
 
 		public String getGodPoojaName() {
-			return godPoojaName;
+			return poojariWife;
 		}
 
 		public void setGodPoojaName(String godPoojaName) {
-			this.godPoojaName = godPoojaName;
+			this.poojariWife = godPoojaName;
 		}
 
 	

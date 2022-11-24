@@ -172,7 +172,7 @@ public class WaterBottle {
 			if(other instanceof Paint) {
 				System.out.println("other is WaterBottle CAN check");
 				WaterBottle casted=(WaterBottle)other;
-				if(this.brand.equals(casted.getBrand()))
+				if(this.brand.equals(casted.getBrand()) && this.ambasidor.equals(casted.ambasidor))
 				{
 					System.out.println("brand is same");
 					return true;

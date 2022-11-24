@@ -13,7 +13,7 @@ public class InstitutionRunner {
 			institution.setName("Xworkz");
 			institution.setPrincipalName("ramu");
 			institution.setTotalBranches(45);
-			institution.setTotalRevenue(28L);
+			institution.settotalIncome(28L);
 			institution.setTotalStaffs(250);
 			institution.setType("technology based");
 			System.out.println(institution);
