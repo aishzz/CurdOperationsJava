@@ -97,7 +97,8 @@ System.out.println(custom);
 			
 			String ref32 = ref1.replaceAll("CSS", "LOKI");
 			System.out.println(ref32); //Returns a string resulting from replacing all occurrences of oldChar in this string with newChar//
-		        System.out.println(modedifedString);
+		        char[] modedifedString;
+				System.out.println(modedifedString);
 			System.out.println(System.lineSeparator());
 			//-----------------------------------//
 			
