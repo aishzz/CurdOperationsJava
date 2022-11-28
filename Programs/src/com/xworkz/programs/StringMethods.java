@@ -4,32 +4,31 @@ public class StringMethods {
 	
 		public static void main(String[] args) {
 
-			String ref1 = "Working On String";
-			System.out.println(ref1);
-			ref1 = ref1 + " STRING";
-			String ref2 = ref1.concat(",Immutable");
-			System.out.println(ref2);
+String ref1 = "Working On String";
+System.out.println(ref1);
+ref1 = ref1 + " STRING";
+String ref2 = ref1.concat(",Immutable");
+System.out.println(ref2);
 
-			int ref = ref1.indexOf(2);
-			System.out.println(ref);
+int custom = ref1.indexOf(2);//Returns the index within this string of the first occurrence of the specified substring, starting at the specified index//
+System.out.println(custom);
 
-			String ref21 = ref1.intern();
-			System.out.println(ref21);
-			//-----------------------------------//
+			String content = ref1.intern();
+			System.out.println(content);
 			System.out.println(System.lineSeparator());
-			
+			//-----------------------------------------------//
 			boolean ref31 = ref1.isEmpty();
 			System.out.println(ref31);
-			//------------------------------//
+			//------------------------------------------------------//
 			
 			int ref41 = ref1.lastIndexOf(2);
 			System.out.println(ref41);
 			System.out.println(System.lineSeparator());
-//--------------------------------------------------------------//
+                          //--------------------------------------------------------------//
 			boolean ref51 = ref1.contains("INSTITUTE IS IN RAJAJINAGAR");
 			System.out.println(ref51);
 			System.out.println(System.lineSeparator());
-//-----------------------------------------------------------------//
+                        //-----------------------------------------------------------------//
 			boolean ref61 = ref1.contentEquals("WELCOM TO XWORKZ");
 			System.out.println(ref61);
 			System.out.println(System.lineSeparator());
@@ -97,7 +96,8 @@ public class StringMethods {
 			//-----------------------------------//
 			
 			String ref32 = ref1.replaceAll("CSS", "LOKI");
-			System.out.println(ref32);
+			System.out.println(ref32); //Returns a string resulting from replacing all occurrences of oldChar in this string with newChar//
+		        System.out.println(modedifedString);
 			System.out.println(System.lineSeparator());
 			//-----------------------------------//
 			
