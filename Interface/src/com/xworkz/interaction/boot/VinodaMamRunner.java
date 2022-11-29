@@ -1,5 +1,6 @@
 package com.xworkz.interaction.boot;
 
+
 import com.xworkz.interaction.bridge.Archana;
 import com.xworkz.interaction.rules.VinodaMam;
 
@@ -7,8 +8,14 @@ public class VinodaMamRunner {
 	
 		public static void main(String[] args) 
 		{
-			
-			Archana ref = new Archana();
+			Archana ref = new Archana() {
+				
+				@Override
+				public boolean checkStudentsGit() {
+					// TODO Auto-generated method stub
+					return false;
+				}
+			};
 			ref.updateFeeStatus();
 			ref.checkStudentsStatus();
 			ref.presentations();
@@ -17,11 +24,6 @@ public class VinodaMamRunner {
 			
 			System.out.println("-----------------------------------------");
 			
-			VinodaMam ref1= new Archana();
-			ref1.updateFeeStatus();
-			ref1.checkStudentsStatus();
-			ref1.checkStudentsPresentation();
-			ref1.checkStudentsAttandance();
 	}
 
 }
