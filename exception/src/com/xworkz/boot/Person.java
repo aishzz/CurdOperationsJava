@@ -45,6 +45,10 @@ package com.xworkz.boot;
 			System.out.println(this.age);
 			
 		}
+		public boolean uploadedTask() {
+			// TODO Auto-generated method stub
+			return false;
+		}
 		
 	}
 
