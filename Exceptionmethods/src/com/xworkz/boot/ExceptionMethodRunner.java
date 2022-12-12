@@ -62,9 +62,9 @@ public class ExceptionMethodRunner {
 		ExceptionMethod.method57();
 		ExceptionMethod.method59();
 		ExceptionMethod.method60();
-		ExceptionMethod.method61();
-		ExceptionMethod.method62();
-		ExceptionMethod.method63();
+		ExceptionMethod.metho61();
+		ExceptionMethod.metho62();
+		ExceptionMethod.metho63();
 		ExceptionMethod.method64();
 		ExceptionMethod.method65();
 		ExceptionMethod.method66();
@@ -89,19 +89,19 @@ public class ExceptionMethodRunner {
 		ExceptionMethod.method85();
 		ExceptionMethod.method86();
 		ExceptionMethod.method87();
-		ExceptionMethod.method88();
-		ExceptionMethod.method89();
-		ExceptionMethod.method90();
-		ExceptionMethod.method91();
-		ExceptionMethod.method92();
-		ExceptionMethod.method93();
-		ExceptionMethod.method94();
-		ExceptionMethod.method95();
-		ExceptionMethod.method96();
-		ExceptionMethod.method97();
-		ExceptionMethod.method98();
-		ExceptionMethod.method99();
-		ExceptionMethod.method100();
+		ExceptionMethod.errorMethod88();
+		ExceptionMethod.errorMethod89();
+		ExceptionMethod.errorMethod90();
+		ExceptionMethod.errorMethod91();
+		ExceptionMethod.errorMethod92();
+		ExceptionMethod.errorMethod93();
+		ExceptionMethod.errorMethod94();
+		ExceptionMethod.errorMethod95();
+		ExceptionMethod.errorMethod96();
+		ExceptionMethod.errorMethod97();
+		ExceptionMethod.errorMethod98();
+		ExceptionMethod.errorMethod99();
+		ExceptionMethod.errorMethod100();
 		
 		
 		

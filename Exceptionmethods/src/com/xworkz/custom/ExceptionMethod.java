@@ -23,6 +23,7 @@ import java.rmi.MarshalException;
 import java.rmi.NotBoundException;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.NoSuchAlgorithmException;
+import java.security.ProviderException;
 import java.security.acl.AclNotFoundException;
 import java.security.acl.LastOwnerException;
 import java.security.acl.NotOwnerException;
@@ -236,11 +237,11 @@ public class ExceptionMethod {
 	 System.out.println("CoderMalfunctionError,");
 	 throw new CoderMalfunctionError(null);
  }
- public static void method42() {
+ public static void method42() throws MimeTypeParseException {
 	 System.out.println("MimeTypeParseException,,");
 	 throw new MimeTypeParseException(null);
  }
- public static void method43() {
+ public static void method43() throws RefreshFailedException {
 	 System.out.println("RefreshFailedException,");
 	 throw new RefreshFailedException(null);
  }
@@ -297,17 +298,17 @@ public class ExceptionMethod {
 	 throw new  UnmodifiableSetException();
 	 
  }
- public static void method58() {
+ public static void method58() throws InvalidAlgorithmParameterException {
 	 System.out.println(" InvalidAlgorithmParameterException,,");
 	 throw new  InvalidAlgorithmParameterException();
 	 
  }
- public static void method59() {
+ public static void method59() throws InvalidActivityException {
 	 System.out.println(" InvalidActivityException,,");
 	 throw new  InvalidActivityException();
 	 
  }
- public static void method60() {
+ public static void method60() throws InvalidDataException {
 	 System.out.println(" InvalidDataException,,,");
 	 throw new  InvalidDataException();
 	 
@@ -443,67 +444,67 @@ public class ExceptionMethod {
 			 System.out.println("IOError,");
 			 throw new IOError(null);
 		 }
-		 public void errorMethod88()
+		 public static void errorMethod88()
 			{
 				System.out.println("running errorMethod");
 				throw new AssertionError();
 			}
-			public void errorMethod89()
+			public static void errorMethod89()
 			{
 				System.out.println("running errorMethod");
 				throw new CoderMalfunctionError(null);
 			}
-			public void errorMethod90()
+			public  static void errorMethod90()
 			{
 				System.out.println("running errorMethod");
 				throw new FactoryConfigurationError();
 			}
-			public void errorMethod91()
+			public  static void errorMethod91()
 			{
 				System.out.println("running errorMethod");
 				throw new LinkageError();
 			}
-			public void errorMethod92()
+			public static void errorMethod92()
 			{
 				System.out.println("running errorMethod6");
-				throw new ServiceConfigurationError(null);
+				throw new ServiceConfigurationError("hbjw");
 			}
-			public void errorMethod93()
+			public static void errorMethod93()
 			{
 				System.out.println("running errorMethod7");
 				throw new ThreadDeath();
 			}
-			public void errorMethod94()
+			public static void errorMethod94()
 			{
 				System.out.println("running errorMethod");
 				throw new TransformerFactoryConfigurationError();
 			}
-			public void errorMethod95()
+			public static void errorMethod95()
 			{
 				System.out.println("running errorMethod95");
 				throw new InternalError();
 			}
-			public void errorMethod96()
+			public static void errorMethod96()
 			{
 				System.out.println("running errorMethod96");
 				throw new OutOfMemoryError();
 			}
-			public void errorMethod97()
+			public static void errorMethod97()
 			{
 				System.out.println("running errorMethod97");
 				throw new StackOverflowError();
 			}
-			public void errorMethod98()
+			public static void errorMethod98()
 			{
 				System.out.println("running errorMethod");
 				throw new UnknownError();
 			}
-			public void errorMethod99()
+			public static void errorMethod99()
 			{
 				System.out.println("running errorMethod99");
 				throw new AWTError(null);
 			}
-			public void errorMethod100()
+			public static void errorMethod100()
 			{
 				System.out.println("running errorMethod100");
 				throw new TransformerFactoryConfigurationError();
