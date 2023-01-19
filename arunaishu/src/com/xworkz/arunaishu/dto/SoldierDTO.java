@@ -18,7 +18,7 @@ import lombok.ToString;
 @Getter
 @ToString
 
-public abstract class SoldierDTO extends AbstractAuditDto {
+public  class SoldierDTO extends AbstractAuditDto {
 	@NotNull
 	@NotBlank
 	@Size(min = 3, max = 20, message = "Name must be >=3 and <=20")

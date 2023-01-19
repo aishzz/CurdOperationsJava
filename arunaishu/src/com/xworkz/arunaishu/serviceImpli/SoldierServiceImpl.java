@@ -9,18 +9,21 @@ import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
 
 import com.xworkz.arunaishu.dto.SoldierDTO;
-import com.xworkz.arunaishu.repository.SoilderRepo.SoldiersRepo;
+import com.xworkz.arunaishu.repository.SoldierRepo;
 import com.xworkz.arunaishu.service.SoldierService;
 
 import lombok.Setter;
-@Setter
+
 public class SoldierServiceImpl implements SoldierService {
-	private SoldiersRepo soldiersRepo;
+	private SoldierRepo soldierRepo;
 
 	public SoldierServiceImpl() {
 		System.out.println("Created SoldierServiceImpl using no arg const..........");
 	}
-
+	public void setSoldiersRepo(SoldierRepo soldierRepo) {
+		this.soldierRepo = soldierRepo;
+	}
+	
 	@Override
 	public boolean validateAndSave(SoldierDTO dto) {
 		System.out.println("Running validateAndSave");
@@ -39,15 +42,13 @@ public class SoldierServiceImpl implements SoldierService {
 
 		} else {
 			System.out.println("Data is valid");
-			boolean saved = soldiersRepo.save(dto);
+			boolean saved = soldierRepo.save(dto);
 			System.out.println("Dto saved using repo " + saved);
 			return saved;
 		}
 }
 
-	@Override
-	public boolean validateAndSave1(SoldierDTO dto) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+	
+
+	
 }

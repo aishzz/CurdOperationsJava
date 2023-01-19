@@ -6,6 +6,6 @@ public interface SoldierService {
 
 	boolean validateAndSave(SoldierDTO dto);
 
-	boolean validateAndSave1(SoldierDTO dto);
+	
 }
 
